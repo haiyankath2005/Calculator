@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/calc.css">
+    <script src="js/calc.js"></script>
+</head>
+<body>
+	<div>
+		<header id="screen"></header>
+		<table>
+            <tbody>
+
+				<tr class="orange">
+					<td onclick="clearScr()">AC</td>
+          				<td onclick="sendNum('*0.01')">%</td>
+          				<td onclick="sendNum('/')">/</td>
+				</tr>
+
+				<tr class="orange">
+					<td onclick="sendNum('+')">+</td>
+					<td onclick="sendNum('-')">-</td>
+					<td onclick="sendNum('*')">x</td>
+				</tr>
+
+				<tr>
+			    		<td onclick="sendNum('7')">7</td>
+			    		<td onclick="sendNum('8')">8</td>
+			    		<td onclick="sendNum('9')">9</td>
+				</tr>
+
+				<tr>
+					<td onclick="sendNum('4')">4</td>
+					<td onclick="sendNum('5')">5</td>
+					<td onclick="sendNum('6')">6</td>
+				</tr>
+
+				<tr>
+      					<td onclick="sendNum('1')">1</td>
+					<td onclick="sendNum('2')">2</td>
+					<td onclick="sendNum('3')">3</td>
+				</tr>
+
+				<tr>
+      					<td onclick="sendNum('.')">.</td>
+					<td onclick="sendNum('0')">0</td>
+					<td onclick="equalTo()">=</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCZqQjCxN775Ma4C6pDepr_Ucf_dfMcsJc",
+    authDomain: "calculator-54873.firebaseapp.com",
+    projectId: "calculator-54873",
+    storageBucket: "calculator-54873.appspot.com",
+    messagingSenderId: "586863976327",
+    appId: "1:586863976327:web:759384e01c855293d43d22",
+    measurementId: "G-W5QJWFHM9T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>
